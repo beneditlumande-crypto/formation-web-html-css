@@ -73,18 +73,28 @@
   Répartissez la préparation dans les caissettes à l’aide d’une grande
   cuillère.
 </p>
-<h3>Étape 3 : cuisson</h3>
+ <h3>Étape 3 : cuisson</h3>
 <p>Enfournez pour 25 minutes de cuisson.</p>
+
 <h2>Dégustation</h2>
 <p>À déguster froids ou encore tièdes.</p>
-  <h2>Donnez votre avis</h2>
-  <label for="nom">Votre nom</label>
-  <input type="text" id="nom" required>
-  <label for="choix">Comment avez-vous trouvé cette recette</label>
-  <select id="choix">
+
+<h2>Donnez votre avis</h2>
+<form action="#" method="post">
+  <div>
+    <label for="nom">Votre nom :</label>
+    <input type="text" id="nom" name="nom" required>
+  </div>
+  
+  <div>
+    <label for="choix">Comment avez-vous trouvé cette recette :</label>
+    <select id="choix" name="choix">
       <option value="3">Délicieuse</option>
       <option value="2">Bonne</option>
       <option value="1">Pas très bonne</option>
-  </select>
+    </select>
+  </div>
+  
   <button type="submit">Je donne mon avis</button>
 </form>
+
